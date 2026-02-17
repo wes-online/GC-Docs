@@ -20,9 +20,9 @@ export default defineConfig({
     editLink: {
       pattern: ({ filePath }) => {
         if (filePath.startsWith('packages/')) {
-          return `https://github.com/wes-online/GC-Docs/tree/main/docs${filePath}`
+          return `https://github.com/wes-online/GC-Docs/blob/main/docs${filePath}`
         } else {
-          return `https://github.com/wes-online/GC-Docs/tree/main/docs${filePath}`
+          return `https://github.com/wes-online/GC-Docs/blob/main/docs${filePath}`
         }
       }
     },
