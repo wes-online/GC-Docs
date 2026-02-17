@@ -15,6 +15,17 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+
+    editLink: {
+      pattern: ({ filePath }) => {
+        if (filePath.startsWith('packages/')) {
+          return `https://github.com/wes-online/GC-Docs/tree/main/docs${filePath}`
+        } else {
+          return `https://github.com/wes-online/GC-Docs/tree/main/docs${filePath}`
+        }
+      }
+    },
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
