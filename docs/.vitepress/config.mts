@@ -6,6 +6,7 @@ export default defineConfig({
   title: "My Awesome Project",
   description: "A VitePress Site",
   base: '/GC-Docs/',
+  lastUpdated: true,
 
   markdown: {
     config: (md) => {
