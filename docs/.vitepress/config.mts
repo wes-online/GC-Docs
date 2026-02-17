@@ -38,7 +38,7 @@ export default defineConfig({
         items: [
           { text: 'Before You Connect', link: '/before-you-connect' },
           { text: 'Guides', collapsed: true, link: '/guides', items: [
-            { text: 'test', link: '/test' }
+            { text: 'Plugin Help', link: '/plugins' }
           ] }
         ]
       }
