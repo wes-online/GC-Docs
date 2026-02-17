@@ -3,8 +3,8 @@ import MarkdownItFootnote from 'markdown-it-footnote'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "SerfCraft",
+  description: "A Minecraft Civilization Server",
   base: '/GC-Docs/',
   lastUpdated: true,
 
@@ -36,8 +36,10 @@ export default defineConfig({
       {
         text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Before You Connect', link: '/before-you-connect' },
+          { text: 'Guides', collapsed: true, link: '/guides', items: [
+            { text: 'test', link: '/test' }
+          ] }
         ]
       }
     ],
