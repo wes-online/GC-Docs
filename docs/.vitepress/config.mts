@@ -5,6 +5,7 @@ import MarkdownItFootnote from 'markdown-it-footnote'
 export default defineConfig({
   title: "My Awesome Project",
   description: "A VitePress Site",
+  base: '/GC-Docs/',
 
   markdown: {
     config: (md) => {
